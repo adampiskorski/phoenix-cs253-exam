@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="heading">{{subject}}</div>
+
+{% if WikiPages %}
+<div class='content'> 
+	{% for WikiPage in WikiPages %}
+
+<div class='content'> 
+
+	<div>{{WikiPage.content}}</div>
+
+	{% if WikiPage.last_modified.strftime("%d %b %Y, %H:%M:%S") != WikiPage.created.strftime("%d %b %Y, %H:%M:%S") %}
+	<span class="post-modified">Last modified: {{WikiPage.last_modified.strftime("%H:%M:%S, %d %b %Y")}}</span>
+	<br>
+	{% endif %}
+	<span class="db_access">Created: {{WikiPage.created.strftime("%d %b %Y")}}</span>
+	
+	<br>
+	<br>
+	{% endfor %}
+	
+</div>
+<br>
+<div class="db_access">queried {{db_access}} seconds ago</div>
+{% endif %}
+
+{% endblock %}

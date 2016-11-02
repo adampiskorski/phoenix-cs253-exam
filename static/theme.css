@@ -1,0 +1,120 @@
+
+
+.menu-l
+{
+    position: absolute;
+    left: 0px;
+}
+
+.menu-r
+{
+    position: absolute;
+    right: 0px;
+}
+
+
+.heading
+{
+    position: absolute;
+    left: 40%;
+    font-size: 25px;
+    font-family: monospace;
+}
+
+.content {
+    position: relative;
+    margin-top:75px;
+    width: 100%;
+}
+
+.post-heading
+{
+    display: block;
+    font-size: 25px;
+    font-weight: bold;
+    position: relative;
+    border-bottom: 3px solid #666;
+    margin-bottom: 25px;  
+}
+
+.post-subject
+{
+    font-weight: bold;
+}
+
+.post-date
+{
+    position: absolute;
+    font-size: 15px;
+    right: 1px;
+    font-family: monospace;
+}
+
+.db_access
+{
+    margin-top: 50px;
+    position: absolute;
+    font-size: 12px;
+    right: 50px;
+    font-family: monospace;
+}
+
+.post-body
+{
+    margin-top: 25px;
+    margin-bottom: 23px;
+    width:500px;
+    overflow: auto;
+}
+
+.post-modified
+{
+    font-family: monospace;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.post-user
+{
+    position: absolute;
+    right: 170px;  
+}
+
+.post-in-list
+{
+    margin-bottom: 60px;    
+}
+
+
+.submit-content {
+    height: 600px;
+    width: 100%;
+}
+
+.center {
+    text-align: center;
+}
+
+.border
+{
+    padding:20px;
+}
+
+.link
+{
+    text-decoration: none;
+    color: black;
+}
+
+.error
+{
+    color: red;
+}
+
+
+input[type=submit] {
+    position: relative;
+    left: 50%;
+    margin-top:15px;
+    margin-left:-35px;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>CS253 Wiki Site</title>
+        <link rel="stylesheet" type="text/css" href="/static/theme.css" />
+</head>
+
+<body>
+	<div>
+		<table class="menu-l">
+			<tr>
+				<td class="border"><a class="link" href="/">Home</a></td>
+				<td class="border"><a class="link" href="/test">Test</a></td>
+			</tr>
+		</table>
+		<table class="menu-r">
+			<tr>
+				<td class="border">{% if user %}
+								   {{options}}
+								   {% endif %}
+				</td>
+				<td class="border">{% if user %} 
+					               Hello {{user.username}}! <a class="link" href="/logout">(logout)</a>
+					               {% else %}
+					               <a class="link" href="/login">Login</a> | <a class="link" href="/signup">Signup</a>
+					               {% endif %}
+				</td>
+			</tr>
+		</table>
+	</div>
+	<br>
+  	{% block content %}
+  	{% endblock %}
+
+</body>
+
+</html>
